@@ -1,21 +1,12 @@
 body {
   background-color: rgb(167, 224, 170);
-  background-image: url("./images/183.jpg");
   background-repeat: repeat;
-  height: 10vh;
-  display: grid;
-  grid-template-rows: 80px 8px;
 }
 
 header {
-  grid-row-start: 2;
-  grid-row-end: 2;
   background-image: url("./images/eritrea-flag.png");
   display: flex;
   align-items: flex-start;
-  position: fixed;
-  left: 0;
-  right: 0;
 }
 
 .header-image {
@@ -73,12 +64,11 @@ p.title {
   z-index: 4;
   right: auto;
   height: 1px;
-  letter-spacing: normal;
+  letter-spacing: normal .
 }
 
 footer {
   background: #96124a;
-  background-repeat;
   position: fixed;
   bottom: 0px;
   left: 0px;
@@ -86,4 +76,22 @@ footer {
   height: 70px;
   grid-row-start: 3;
   grid-row-end: 3;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 40% 40% 20%;
+}
+
+.picture {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-self: center;
+}
+
+.writing {}
+
+.about-image {
+  padding: 5px;
 }
