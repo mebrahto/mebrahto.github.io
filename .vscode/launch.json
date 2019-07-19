@@ -1,4 +1,353 @@
-{
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 33vh 33vh 25vh;
+  grid-gap: 0px;
+  text-align: center;
+  color: white;
+  grid-template-areas:
+    ". . ."
+    "t img ."
+    "t img end";
+}
+
+.grid-item {
+  padding: 50px;
+  font-size: 23px;
+}
+
+h1 {
+  color: gold;
+  font-size: 50px;
+}
+
+#About {
+  background-image: url('./images/blue.jpg');
+  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: 98vh;
+}
+
+#front {
+  background: url('./images/Nebula.mp4');
+}
+
+.backgroung-wrap {
+  position: fixed;
+  z-index: -1000;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+#video-bg-elem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+/* #links {
+  background: url('./images/Moonset.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: 98vh;
+} */
+body {
+  margin: auto;
+  font-family: 'Josefin Sans', sans-serif;
+  position: absolute;
+}
+
+header {
+  display: inline;
+  margin: auto;
+  font-size: 20px;
+}
+
+i {
+  color: gold;
+  text-align: center;
+  margin-top: auto;
+  font-size: 100px;
+}
+
+p {
+  color: gold;
+  font-size: 22px;
+}
+
+em {
+  color: lightblue;
+  font-size: 25px;
+}
+
+h2 {
+  color: red;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  color: white;
+  text-align: left;
+  bottom: 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.logo-img {
+  float: left;
+  position: relative;
+  margin: 10px;
+  height: 75px;
+}
+
+.grid-logo {
+  margin: 10px;
+  height: 75px;
+  position: absolute;
+}
+
+.header-title {
+  margin: auto;
+}
+
+.name {
+  text-align: center;
+}
+
+.rg {
+  display: inherit;
+  position: relative;
+  width: auto;
+  padding: 15px;
+  background-color: Brown;
+  font-size: 20px;
+}
+
+.link {
+  color: gold;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: gold;
+  transition: .2s;
+  background: black;
+  padding: 15px;
+}
+
+.NA:hover {
+  color: White;
+  text-align: right;
+}
+
+.navfh {
+  text-align: right;
+  background: none;
+  display: block;
+  width: auto;
+  padding: 15px;
+  font-size: 30px;
+  margin-top: auto;
+  overflow: hidden;
+}
+
+.fh:hover {
+  color: blue;
+  background-color: none;
+}
+
+.fh {
+  text-shadow: yellow;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  background-color: violet;
+  border-radius: 20px;
+}
+
+.c:hover {
+  color: Yellow;
+  background-color: none;
+}
+
+.c {
+  text-shadow: yellow;
+  text-align: center;
+  text-decoration: none;
+}
+
+.lcm {
+  text-align: center;
+}
+
+.nav-header {
+  overflow: hidden;
+}
+
+.op {
+  text-align: center;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  color: gold;
+  padding: 0px;
+  font-size: 20px;
+  border: none;
+  font-family: Josefin Sans;
+  transition: .2s;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: brown;
+  min-width: 150px;
+  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 15px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: gold;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: black;
+  transition: 0.2 second;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: black;
+  padding: 15px;
+}
+
+.Minmg {
+  width: 250px;
+  height: 250px;
+  margin-left: 100px;
+}
+
+.bodyt {
+  width: 85%;
+  margin: 7%;
+  line-height: 1.6;
+}
+
+#mp {
+  padding: 0;
+  max-width: 400px;
+}
+
+.authur {
+  font-style: italic;
+  color: gold;
+}
+
+.picfa1:hover {
+  display:
+    padding: 2px;
+}
+
+.picfa1 {
+  width: 25%;
+  height: 70%;
+  border-radius: 50%;
+  float: right;
+}
+
+.classmatepic {
+  float: left;
+  width: 40%;
+  height: 40%;
+  border-radius: 30%;
+}
+
+.classmatepic1 {
+  float: right;
+  width: 40%;
+  height: 40%;
+  border-radius: 30%;
+}
+
+.classmatepage {
+  padding: 8%;
+}
+
+#icon i {
+  font-size: 50px;
+  color: deepskyblue;
+  margin-left: 20px;
+  /* box-shadow: 0 3px blue; */
+}
+
+#icon i:hover {
+  color: blue;
+  transition: 0.2sec;
+}
+
+#icons i {
+  font-size: 30px;
+  color: white;
+  margin-left: 0px;
+  background-color: violet;
+}
+
+#icons i:hover {
+  color: blue;
+  transition: 0.2sec;
+}
+
+.nameunder {
+  text-align: center;
+  margin-left: 120px;
+}
+
+/* #classpage {
+  top: 20px;
+  font-size: 20px;
+  visibility: hidden; */
+}
+
+.ddd {
+  color: white;
+  font-size: 40px;
+}{
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
